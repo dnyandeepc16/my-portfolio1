@@ -1,0 +1,291 @@
+@import 'utilities.css';
+:root{
+    --primary: rgb(199, 102, 255);
+    --secondary: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing: antialiased;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* height: 4000px; */
+    font-family: 'Poppins', arial;
+    background-color: rgb(240, 240, 240);
+    /* background-color: rgb(46, 46, 46); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+      
+}
+header{
+    background-color: rgb(46, 46, 46);
+    /* background-color: rgb(255, 255, 255); */
+}
+header .logo{
+    color: var(--primary);
+    transition: all 0.2s ease;
+}
+header .logo:hover{
+    position: relative;
+    /* top: -5px; */
+    transform: scale(1.15) rotate(-5deg);
+   }
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+} 
+
+header nav .left a {
+    color: rgb(234, 244, 255);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+header nav{
+    padding: 1rem 0;;
+}
+header nav .logo{
+    margin-right: 3rem;
+}
+header nav .right{
+    color: var(--primary);
+}
+.myself .left img{
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 100px;
+    box-shadow: -8px 8px 30px 0 rgba(188, 137, 255, 0.253), 0 6px 20px 0 rgba(163, 114, 255, 0.199);
+    -webkit-border-radius: 200px;
+    transition: transform 0.25s ease;
+}
+.myself .left img:hover{
+    transform: scale(1.05);
+}
+.myself .right{
+    /* color: white; */
+   font-weight: 600;
+    font-size: 50px;
+    margin-left: 300px;
+    margin-top: 20px;
+
+}
+.myself .right .name {
+    color: rgb(199, 104, 255) ;
+    font-size: 1.12em;
+}
+.myself .right .name2{
+    color: rgb(119, 95, 255);
+}
+section .para{
+    margin: 60px 10px;
+    padding: 0 50px;    
+    color: rgb(165, 165, 165) ;
+}
+
+section.my-work .container{
+    /* margin: 200px auto; */
+    margin-top: 200px;
+    padding: 6px 5px;;
+    text-align: center;
+    border: 3px solid var(--primary);
+    border-radius: 25px;
+    box-shadow: -8px 8px 30px 0 rgba(188, 137, 255, 0.253), 0 6px 20px 0 rgba(163, 114, 255, 0.199);
+    text-transform: uppercase;
+
+}
+
+section.my-work .card-holder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    margin: 100px 10px;
+    padding: 2rem 2rem;
+}
+section.my-work .card-holder .card{
+    background: rgb(253, 251, 255);
+    padding: 3rem 3rem;
+    position: relative;
+    transition: all 0.15s ease;
+    border-radius: 15px;
+}
+
+section.my-work .card-holder .card:hover{
+    transform: scale(1.025) translateY(-5%);
+    box-shadow: -8px 8px 30px 0 rgba(139, 139, 139, 0.342), 0 6px 20px 0 rgba(105, 105, 105, 0.288);
+}
+
+section.my-work .card-holder .card img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.my-work .card-holder .card h1{
+    background: var(--primary);
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: -1.4rem;
+    left: 11rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 10px;
+    font-weight: 300;
+    font-size: 1.65rem;
+    width: 60%;
+
+}
+.contact{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(185, 185, 185, 0.151) 0%, rgba(228, 155, 255, 0.336) 100%);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px 0;
+}
+.contact h1{
+    text-transform: uppercase;
+}
+.contact h1 .me{
+    color: var(--primary);
+}
+.contact p::first-letter{
+    font-weight: 10;
+    font-size: 2rem;
+}
+.contact p{
+    color: rgb(158, 158, 158);
+}
+
+.contact .card h5{
+    color: rgb(150, 150, 150);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+section.contact .card-holder{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+        
+}
+.contact .card{
+    transition: all 0.25s ease;
+}
+.contact .card:hover{
+    color: var(--primary);
+    transform: scale(1.1);
+}
+.controller{
+    /* background: rgb(165, 165, 165); */
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+}
+.cp-text{
+    background: rgb(70, 70, 70);
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(156, 156, 156);
+}
+section.contact .forms{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: -0.1rem;
+    margin-top: 60px;
+
+}
+section.contact .forms input{
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border-style: none;
+}
+
+section.contact .forms-2{
+    padding: 1rem;
+
+}
+
+section.contact .forms-3{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .forms-3 input, textarea{
+    outline: none;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 12px;
+    border-style: none;
+}
+   
+section.contact .forms-3 input{
+    padding: .5rem;
+    width: 40%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+section.contact input{
+    padding: .5rem ;
+}
+.forms-3 .submit{
+    width: 14rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 22px auto;
+    position: relative;
+}
+.radio_input{
+    display: none;
+    
+}
+.radio_radio{
+    width: 1em;
+    height: 1em;
+    border: 2px solid rgb(211, 187, 224);
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.radio_radio::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: var(--primary);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+.radio_input:checked + .radio_radio::after{
+    transform: scale(1);
+}
+.radio label{
+    padding-right: 15px;
+}
+
+
+
+.copyright{
+    color: var(--primary);
+}
